@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #task1_container {
+        width: 100%;
+        height: 10vh;
+        display: flex;
+      }
+
+      #task1 {
+        width: 25vh;
+        height: 8vh;
+        background-color: yellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .all {
+        height: 70vh;
+        width: 50vh;
+      }
+      .head {
+        height: 8vh;
+        width: 50vh;
+        margin-top: 20px;
+        background-color: silver;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        border: 1px solid black;
+      }
+      #details {
+        margin-top: 20px;
+      }
+
+      #tools {
+        width: 80vh;
+        height: 7vh;
+        background-color: wheat;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+      }
+      #box {
+        margin-top: 20vh;
+        height: 30vh;
+        width: 30vh;
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="task1_container">
+      <div id="task1">Hello!</div>
+    </div>
+
+    <select name="" id="countries">
+      <option value="Jordan">Jordan</option>
+      <option value="Palestine">Palestine</option>
+      <option value="USA">USA</option>
+    </select>
+    <img style="width: 20vh" id="img" src="JO-Jordan-Flag-icon.png" />
+
+    <div class="task3" style="margin-top: 20px">
+      <form action="">
+        <h3>Password (min 6 characters)</h3>
+        <input id="min6" type="password" />
+        <label id="label1"></label>
+
+        <h3>Repeat password</h3>
+        <input id="rp" type="password" />
+        <label id="label2"></label>
+        <div></div>
+        <input type="submit" />
+      </form>
+    </div>
+    <div class="all">
+      <div class="head">
+        <h3>What is lorem ipsum?</h3>
+        <a href="#" style="margin: 20px; margin-left: 80px" id="show">show</a>
+      </div>
+      <div id="details" style="display: none">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sint earum
+        ea, quis officia eligendi! Molestias assumenda deleniti, aperiam quia
+        quasi officia eligendi laudantium? Reiciendis optio incidunt laudantium
+        tempora aperiam sint, eos, enim maxime earum dignissimos saepe quibusdam
+        eveniet quo commodi! Provident officia dolore doloremque distinctio
+        earum eveniet est similique recusandae nisi obcaecati facilis
+        necessitatibus ea suscipit repellendus doloribus error laboriosam ullam
+        iusto repellat tempora voluptatibus voluptatem, architecto quo. Nulla,
+        ducimus porro. Maxime, enim. Totam ex ducimus reiciendis dolorem odit
+        nisi, commodi tenetur expedita libero corporis itaque error maiores,
+        officia eos consequatur. Itaque quia aspernatur qui, eveniet aliquam ut?
+        Molestias!
+        <a href="#" id="hide" style="margin: 20px">Hide</a>
+      </div>
+    </div>
+
+    <div>
+      <div id="tools">
+        <div>
+          <label for="fontSelector">Font:</label>
+          <select id="fontSelector">
+            <option value="Arial">Arial</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Times New Roman">Times New Roman</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="fontSizeSelector">Size:</label>
+          <select id="fontSizeSelector">
+            <option value="12">12</option>
+            <option value="16">16</option>
+            <option value="20">20</option>
+          </select>
+        </div>
+
+        <label for="italicCheckbox">Italic:</label>
+        <input type="checkbox" id="italicCheckbox" />
+
+        <label for="underlineCheckbox">Underline:</label>
+        <input type="checkbox" id="underlineCheckbox" />
+
+        <label for="boldCheckbox">Bold:</label>
+        <input type="checkbox" id="boldCheckbox" />
+      </div>
+    </div>
+
+    <textarea id="textArea" rows="4" cols="50">This is a sample text.</textarea>
+
+    <div id="box"></div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
